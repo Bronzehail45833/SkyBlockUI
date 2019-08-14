@@ -41,9 +41,9 @@ class Core extends PluginBase {
 
 		#Dependency Check!
 		#Checks if SkyBlock is enabled on the server!
-		$sb = $this->getServer()->getPluginManager()->getPlugin("SkyBlock");
+		$sb = $this->getServer()->getPluginManager()->getPlugin("FactionsPro");
 		if(is_null($sb)) {
-			$this->getLogger()->notice("Please install SkyBlock by GiantQuartz to use this plugin!");
+			$this->getLogger()->notice("Please install FactionsPro by Poggit-Orphanage to use this plugin!");
 			$this->getServer()->shutdown();
 		}
 
